@@ -1,0 +1,283 @@
+:root {
+    --background-color: #0a0a0a;
+    --accent-color: #0080ff;
+    --text-color: #e0e0e0;
+    --head-font: "Oswald", sans-serif;
+    --body-font: "Roboto Condensed", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 0 10vw;
+}
+
+.blue {
+    color: var(--accent-color);
+}
+
+.navbar {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translate(-50%);
+    right: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    width: 60vw;
+    background: none;
+    border: 2px solid white;
+    border-radius: 5rem;
+    color: var(--text-color);
+    font-family: var(--head-font);
+    padding: 0 1rem 0 4rem;
+}
+
+.leftNav h1 {
+    text-align: center;
+}
+
+.centerNav {
+    flex: 1;
+    display: flex;
+}
+
+.navItems {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.navItems li {
+    list-style-type: none;
+    position: relative;
+}
+
+.navItems a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition-delay: 10ms;
+}
+
+.navItems a:hover {
+    text-decoration: underline;
+    color: var(--accent-color);
+}
+
+#contact {
+    height: 3rem;
+    border-radius: 25px;
+    background-color: var(--accent-color);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em;
+    font-family: var(--head-font);
+    font-size: 1em;
+    font-weight: 200;
+    color: var(--text-color);
+}
+
+#contact i {
+    padding-left: 10px;
+    font-size: 1.75em;
+}
+
+/* Hero Section */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    font-family: var(--head-font);
+    text-align: center;
+}
+
+.heroHead {
+    font-size: 3.5rem;
+}
+
+.heroSub h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+    background-color: var(--accent-color);
+    padding: 0.75rem 0;
+}
+
+.heroSub p {
+    font-family: var(--body-font);
+    opacity: 0.5;
+}
+
+/* About Section */
+
+.about {
+    height: 50vh;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--body-font);
+}
+
+.aboutHead {
+    font-family: var(--head-font);
+}
+
+.aboutHead h1 {
+    font-size: 4em;
+    margin-bottom: 0.15em;
+}
+
+.aboutSub p {
+    font-size: 1em;
+}
+
+.aboutInfo {
+    display: flex;
+    margin: 2em 0;
+}
+
+.aboutCard {
+    margin-right: 5em;
+}
+
+.aboutCard h1 {
+    font-size: 4em;
+}
+
+.aboutCard p {
+    font-size: 1em;
+}
+
+.aboutSocial i {
+    font-size: 1.5em;
+    margin-right: 0.25em;
+}
+
+/* Projects Section */
+
+.projects {
+    color: var(--text-color);
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: var(--body-font);
+    gap: 3rem;
+}
+
+.projectHead h1 {
+    font-size: 4em;
+    font-family: var(--head-font);
+}
+
+.projectSub {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Card Styling */
+
+.card {
+    width: 20rem;
+    min-height: 15rem;
+    border: 2px solid var(--text-color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease 50ms;
+}
+
+.card p {
+    display: none;
+}
+
+.card:hover {
+    background-color: var(--accent-color);
+}
+
+.card:hover p {
+    display: block;
+}
+
+.card:hover h2 {
+    display: none;
+}
+
+/* Skills */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    align-items: center;
+    font-family: var(--body-font);
+    color: var(--text-color);
+    text-align: center;
+    gap: 3rem;
+}
+
+.skillsHead h1 {
+    font-family: var(--head-font);
+    font-size: 4em;
+}
+
+.skillsSub {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Footer Styling */
+
+.footer {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    font-family: var(--body-font);
+    gap: 1rem;
+}
+
+.footerLinks i {
+    font-size: 1.5em;
+}
+
+.footerTags {
+    display: flex;
+    gap: 1rem;
+}
+
+.footerTags a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.footerTags a:hover {
+    text-decoration: underline;
+}
